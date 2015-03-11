@@ -1,0 +1,5 @@
+﻿Structs:
+
+How Vertex and Fragment functions talk to each other.
+VextexInput get data from the object and passes it to the vertex function.
+VertexOutput get the data from vertex function and pass it to the fragment function.

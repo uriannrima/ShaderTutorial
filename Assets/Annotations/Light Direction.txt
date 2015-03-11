@@ -1,0 +1,13 @@
+﻿Light Direction in Unity:
+
+Getting the light is easy:
+
+	_WorldSpaceLightPos0
+
+That is a special float4 that handles any light in Unity:
+	- If it is a point light, _WorldSpaceLightPos0.xyz is the location
+	- If it is a direction light, _WorldSpaceLightPos0.xyz is the rotation
+	- _WorldSpaceLightPos0.w is:
+		- 1 for direction light.
+		- 0 for point light.
+		

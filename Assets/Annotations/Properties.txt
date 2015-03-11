@@ -1,0 +1,15 @@
+﻿Properties:
+
+Allow us to interface with the shader and to change values.
+Updating the property of the material, changes the corresponding value of the shader.
+
+We also need to define our variables within our sader to shader acess them.
+The uniform keyword is used to define initial values, but not required.
+
+Types of properties:
+2D - Textures, normal maps, etc
+Color - Simple colors
+Range(0.0, 1.0) - Sliders from 0.0 to 1.0
+float - Floating points.
+Vector - Vector3 position
+Cube - Cube maping.

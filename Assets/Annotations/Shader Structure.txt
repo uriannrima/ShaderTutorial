@@ -1,0 +1,10 @@
+﻿Shader "Name" {} // Name of the shader to Unity
+Properties {} // Interface with the Unity
+SubShader {} // Each shader might be used for an different plataform
+Pass {} // Render pass, you can make multiples render pass using multiples pass. each one doing something
+CGPROGRAM ... ENDCG // Tells Unity that we stopped using Shaderlab and started using CG Language
+Define Variables // Pick variables from Properties if needed, or temporary, as such.
+Structs // Some functions need structs that hold data for us, we need to know what each #pragma needs
+Vertex Program // Function that runs for EACH VERTEX of our Object
+Fragment Program // Function that runs for EACH PIXEL of our Object
+Fallback // If everything goes wrong, use another shader.

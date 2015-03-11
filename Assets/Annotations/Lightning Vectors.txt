@@ -1,0 +1,37 @@
+﻿Lightning Vectors:
+
+Light Direction (L) - Direction which the lights is coming from.
+View Direction (V) - Direction which the viewer is.
+Normal Direction (N) - Direction away from the surface (where light hit)
+Reflected direction (R) - 90º degrees from the light, based on the normal direction
+Halfway Vector (H) - Half way vector from the View and Light direction.
+
+Using dot product we can calculate the distance between those vectors.
+and create variance in lightning.
+
+Dot product is very common in light.
+Returns a value from -1 to 1 as much the first vector gets closer to the second.
+Vector ABC, DEF (A and D are X, B and E are Y, C and F are Z)
+	
+	DOT(ABC,DEF) = A*D+B*E+C*F 
+	So, its a scalar, from -1 to 1.
+
+Thinks like that
+			 0
+		-0.5	0.5
+	-1				+1 N -> <-L
+		-0.5	0.5	
+			  0
+If we calculate the DOT from Normal (N) and Light (L), and it gives an 1
+It means that the normal reflect ALL light on it.
+
+			 0
+		-0.5	0.5
+<-N	-1				+1 <- L
+		-0.5	0.5	
+			  0
+In this case, the Normal (N) and Light (L) gives an 0 Dot product
+So it won't reflect any light.
+
+Half way though each one, will give partial lightning (0.5)
+And partial no lightning (-0.5), wich for us, is unrealistic so we consider 0.

@@ -1,0 +1,21 @@
+﻿Float / Half / Fixed:
+
+Float:
+	- Floating point number
+	- Most precise and "perfect"
+	- But the most expensive to render
+
+Half:
+	- Half the precision from float
+		- 3.3 decimal precision
+		- Plus/Minus 60.000 range
+	- Not that perfect, but good enough
+	Much more efficient
+
+Fixed:
+	- Really small precision
+		- Plus/Minus 2.0 range
+		- It means, that goes from 0 to 256
+	- Most optimized
+	- Perfect for Color and Dot products
+	- Almost from -1 to 1, so can be used for some calculations

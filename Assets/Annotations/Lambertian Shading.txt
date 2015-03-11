@@ -1,0 +1,8 @@
+﻿Lambertian Shading
+
+Soft lightning with no specular component.
+So, it doesn't matter the angle of view from the observer to the object
+it always shows the same brightness.
+
+It compares the incoming light direction with the normal direction
+to get an gradient fallof of light.

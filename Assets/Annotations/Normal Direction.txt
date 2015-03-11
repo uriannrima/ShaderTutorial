@@ -1,0 +1,7 @@
+﻿Normal Direction
+
+To get the normal direction:
+ - We use the semantic NORMAL, and asign it to a variable
+ - Multiply it by _World2Object float4x4 matrix to get the normal in the object space.
+	- This calculation, we'll be doing it in the vertex program knows as Vertex lighning.
+	- It can be done on the fragment programming too, known as Pixel lightning.

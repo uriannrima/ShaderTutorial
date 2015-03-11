@@ -1,0 +1,9 @@
+﻿Vertex Program:
+Deals with everything once per vertex, per frame, use VertexInput as base and write to VertexOutput.
+The only required thing in this function, is the VertexPosition, so Unity knows where to render the object.
+Everything else, is extra to fancy effects.
+
+Fragment Program:
+Deals with everything once per pixel per frame, and also refered as pixel shader.
+Use VertexOutput as base of calculations and returning a Color for that pixel.
+Overload commonly happens at this function if overloaded.
