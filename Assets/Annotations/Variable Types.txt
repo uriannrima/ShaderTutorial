@@ -14,8 +14,10 @@ Half:
 
 Fixed:
 	- Really small precision
-		- Plus/Minus 2.0 range
-		- It means, that goes from 0 to 256
+		- 2^8 = 256 values
+		- It means, that goes from 0 to 255 (INT)
+		- Or from -2 and +2 (FLOAT)
+		- Or from -128 to +128 (INT)
 	- Most optimized
 	- Perfect for Color and Dot products
 	- Almost from -1 to 1, so can be used for some calculations
